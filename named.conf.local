@@ -1,0 +1,42 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used >
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "projecteinfovj.com" {
+    type master;
+    file "/etc/bind/db.projecteinfovj.com";
+};
+
+zone "estacions.projecteinfovj.com" {
+    type master;
+    file "/etc/bind/db.estacions.projecteinfovj.com";
+};
+
+zone "146.18.10.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.10";
+};
+
+
+// ESCLAUS
+zone "projecteinfovj.org" {
+    type secondary;
+    file "db.projecteinfovj.org";
+    masters { 192.168.146.16;  };
+};
+
+zone "estacions.projecteinfovj.org" {
+    type secondary;
+    file "db.estacions.projecteinfovj.org";
+    masters { 192.168.146.16;  };
+};
+
+zone "146.168.192.in-addr.arpa" {
+    type secondary;
+    file "db.10";
+    masters { 192.168.146.16;  };
+};
