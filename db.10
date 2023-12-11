@@ -1,0 +1,21 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL    604800
+@       IN      SOA     projecteinfovj.com. root.projecteinfo>
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      ns01.projecteinfovj.com.
+10      IN      PTR     ns01.projecteinfovj.com.
+@       IN      NS      ns02.projecteinfovj.com.
+11      IN      PTR     ns02.projecteinfovj.com.
+20      IN      PTR     est01.estacions.projecteinfovj.com.
+21      IN      PTR     est02.estacions.projecteinfovj.com.
+22      IN      PTR     est03.estacions.projecteinfovj.com.
+23      IN      PTR     est04.estacions.projecteinfovj.com.
+24      IN      PTR     est05.estacions.projecteinfovj.com.
+25      IN      PTR     est06.estacions.projecteinfovj.com.
