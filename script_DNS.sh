@@ -16,8 +16,8 @@ f_dns_principal="https://raw.githubusercontent.com/joan032/DNS/master/db.project
 echo $STRING
 
 # Install DHCP
-sudo apt-get install bind9
-sudo apt-get install dnsutils
+sudo apt install bind9
+sudo apt install dnsutils
 
 # Download GitHub configuration file
 wget $f_dns_conf
