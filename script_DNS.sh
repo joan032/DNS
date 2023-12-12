@@ -32,4 +32,4 @@ sudo cp db.estacions.projecteinfovj.com /etc/bind/
 sudo cp db.10 /etc/bind/
 
 # Restart the DHCP server
-sudo systemctl restart isc-dhcp-server
+sudo systemctl restart bind9
